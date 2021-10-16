@@ -1,0 +1,7 @@
+CREATE TABLE user (
+    id   INTEGER      NOT NULL AUTO_INCREMENT,
+    name VARCHAR(45) NOT NULL,
+    password VARCHAR(45) NOT NULL,
+    created_date DATE NOT NULL DEFAULT CURRENT_TIMESTAMP
+    PRIMARY KEY (id)
+);
