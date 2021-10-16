@@ -8,7 +8,7 @@ public class LoginController {
 	
 	@RequestMapping({"/"})
 	public String first() {
-		return "index";
+		 return "index";
 	}
 
 }
