@@ -18,7 +18,7 @@
         </form>
     </div>
     <div>
-        <h1>List of Users</h1>
+        <h1>User Info</h1>
     </div>
      
     <div>
@@ -31,15 +31,15 @@
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="user: ${listUsers}">
-                    <td th:text="${user.id}">User ID</td>
-                    <td th:text="${user.name}">User Name</td>
+                <tr>
+                    <td th:text="${Id}">User ID</td>
+                    <td th:text="${name}">User Name</td>
                     
                 </tr>
             </tbody>
         </table>
     </div>
-     <h3><a th:href="@{/loginuser}">Login</a></h3>
+     <h3><a th:href="@{/users}">List of Users</a></h3>
 </div>
 
 </body>

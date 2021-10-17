@@ -7,6 +7,7 @@ public class UserList {
 	 private Long id;
 	 private String name;
 	 private Date created_date;
+	 private String password;
 	    public Date getCreated() {
 	    	return created_date;
 	    }
@@ -25,6 +26,12 @@ public class UserList {
 	    public void setName(String name) {
 	    	this.name=name;
 	    }
+		public String getPassword() {
+			return password;
+		}
+		public void setPassword(String password) {
+			this.password = password;
+		}
 	    
 	    
 }

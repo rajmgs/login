@@ -26,9 +26,27 @@ public List<UserList> findAllUser() {
 	String query=Utils.readProperties("getalluser");
 	user= jdbcTemplate.query(query, new UserMapper());
 	logger.info("query result "+user);
+	for(UserList users: user) {
+		System.out.println(users.getId());
+	}
 	logger.info("exiting into findalluser::UserlistImpl ");
 	// TODO Auto-generated method stub
 	return user;
 }
 
+public UserList findByName(String username) {
+	// TODO Auto-generated method stub
+	logger.info("entering into findalluser::UserlistImpl ");
+	UserList user=null;
+	String query=Utils.readProperties("getalluserByname");
+	user= (UserList) jdbcTemplate.query(query, new UserMapper());
+	logger.info("query result "+user);
+	
+		System.out.println(user.getId());
+		logger.info("exiting into findalluser::UserlistImpl ");
+		// TODO Auto-generated method stub
+		return user;
+	}
+	
 }
+
