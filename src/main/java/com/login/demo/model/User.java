@@ -1,5 +1,7 @@
 package com.login.demo.model;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,7 +22,15 @@ public class User {
      
     @Column(nullable = false)
     private String password;
-    
+
+    @Column(nullable=false)
+    private Date created_date;
+    public Date getCreated() {
+    	return created_date;
+    }
+    public void setCreated(Date create) {
+    	this.created_date=create;
+    }
     public Long  getId() {
     	return id;
     }
