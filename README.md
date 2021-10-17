@@ -6,3 +6,8 @@ Now initialize database name and password
 -----> ![dbname pass](https://user-images.githubusercontent.com/47008815/137633826-e4a2df23-4fd7-48b4-8b84-61f936e0a474.PNG)
 intalize dataset
 ![initalize_db](https://user-images.githubusercontent.com/47008815/137633845-88840da1-50ac-419f-a443-b42d26999872.PNG)
+
+run application as Java application
+
+for first login use-----> username==user and password==token generated at console
+
